@@ -152,6 +152,7 @@ void cloudView(){
 
     glPopMatrix();
 }
+	
 
 void cloudviewDAy(){
 
@@ -165,6 +166,8 @@ void cloudviewDAy(){
 
     glPopMatrix();
 }
+	
+	
 void SkyComponent(bool isDay){
     if(isDay==true){
     glBegin(GL_QUADS);
@@ -176,6 +179,7 @@ void SkyComponent(bool isDay){
     glVertex2f(-1.0f, 1.0f);
     glEnd();
     sunComponent();
+	    
     cloudviewDAy();
     }
     else{
